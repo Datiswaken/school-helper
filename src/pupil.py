@@ -8,7 +8,7 @@ class Pupil:
         return self._name
 
     @property
-    def is_sick(self):
+    def is_sick(self) -> bool:
         return self._is_sick
 
     @is_sick.setter

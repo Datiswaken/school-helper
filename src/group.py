@@ -1,10 +1,8 @@
-from typing import List, Union
-
 from src.pupil import Pupil
 
 
 class Group:
-    def __init__(self, name: str, pupils: List[Pupil]):
+    def __init__(self, name: str, pupils: list[Pupil]):
         self._name = name
         self._pupils = pupils
         self._size = len(self._pupils)
@@ -23,7 +21,7 @@ class Group:
         return self._name
 
     @property
-    def pupils(self) -> List[Pupil]:
+    def pupils(self) -> list[Pupil]:
         return self._pupils
 
     @property
