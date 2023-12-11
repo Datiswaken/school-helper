@@ -86,7 +86,12 @@ def run():
             for group in school_class.make_groups_of_n_pupils(n=number_of_pupils_per_group, only_healthy=only_healthy):
                 print(group)
 
-        new_action = UserInput(NEW_ACTION, options=["ENTER", "q"], skippable=True, default="new_action").request_user_input()
+        new_action = UserInput(
+            NEW_ACTION,
+            options=["ENTER", "q"],
+            skippable=True,
+            default="ENTER"
+        ).request_user_input()
         if new_action == "q":
             exit_script = True
 
