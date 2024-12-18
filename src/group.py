@@ -16,6 +16,9 @@ class Group:
 
         return output
 
+    def __len__(self) -> int:
+        return self._size
+
     @property
     def name(self) -> str:
         return self._name
