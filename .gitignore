@@ -58,4 +58,5 @@ docs/_build/
 target/
 
 .idea/
-school_classes/
+school_classes/*
+!school_classes/.gitkeep
